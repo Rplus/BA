@@ -1,8 +1,8 @@
 <script>
   // import data_url_tw from './data/students.min.tw.json?url'
   // import data_url_jp from './data/students.min.jp.json?url'
-  // import data_url from './data/students.json?url'
-  import data_tw from './data/students.json'
+  import data_url from './data/students.json?url'
+  // import data_tw from './data/students.json'
 
   let filterProps = [
     // 'SquadType',
@@ -31,7 +31,8 @@
     name: '',
     checkbox: '',
   };
-  let avatar_size = 96;
+  let avatar_size = +qs.get('size') || 96;
+  let show_icons = Boolean(+qs.get('icon'));
 
   get_data();
 
@@ -57,7 +58,7 @@
   }
 
   function update_checkbox_filter() {
-    console.log(filtersPool);
+    // console.log(filtersPool);
     let unchecked_selectors = filtersPool.map(pool => {
       if (!pool.filters.filter(f => f.value).length) {
         return;
@@ -74,7 +75,7 @@
   }
 
   async function get_data() {
-    // let data_tw = await fetch(data_url).then(d => d.json());
+    let data_tw = await fetch(data_url).then(d => d.json());
     // let data_tw = await fetch(data_url_tw).then(d => d.json());
     // let data_jp = await fetch(data_url_jp).then(d => d.json());
     // data_tw.forEach((i, index) => {
@@ -212,7 +213,10 @@
           </div>
         </fieldset>
 
-        <div style="text-align: right; margin-top:4px">
+        <div style="display: flex; justify-content: space-between;">
+          <label>
+            <input type="checkbox" bind:checked={show_icons}> 顯示圖示
+          </label>
           <input type="reset" value="Reset">
         </div>
       </div>
@@ -246,15 +250,16 @@
                 data-bullettype={stu.BulletType}
                 data-tacticrole={stu.TacticRole}
               >
-                <!-- <img class="avatar" src="https://proxy.duckduckgo.com/iu/?u=https://schale.gg/images/student/collection/{stu.CollectionTexture}.webp" loading="lazy"> -->
                 <img class="avatar" src="{IMG_FOLDER}student/collection/{stu.CollectionTexture}.webp" loading="lazy">
 
-                <div class="icons">
-                  <div class="icon icon-{stu.TacticRole} icon-role" style="background-image: url('{IMG_FOLDER}/ui/Role_{stu.TacticRole}.png')" title={stu.TacticRole}></div>
-                  <div class="icon icon-{stu.BulletType}" style="background-image: url('{IMG_FOLDER}/ui/Type_Attack_s.png')" title={stu.BulletType}></div>
-                  <div class="icon icon-{stu.ArmorType}" style="background-image: url('{IMG_FOLDER}/ui/Type_Defense_s.png')" title={stu.ArmorType}></div>
-                  <!-- {stu.Position} -->
-                </div>
+                {#if show_icons}
+                  <div class="icons">
+                    <div class="icon icon-{stu.TacticRole} icon-role" style="background-image: url('{IMG_FOLDER}/ui/Role_{stu.TacticRole}.png')" title={stu.TacticRole}></div>
+                    <div class="icon icon-{stu.BulletType}" style="background-image: url('{IMG_FOLDER}/ui/Type_Attack_s.png')" title={stu.BulletType}></div>
+                    <div class="icon icon-{stu.ArmorType}" style="background-image: url('{IMG_FOLDER}/ui/Type_Defense_s.png')" title={stu.ArmorType}></div>
+                    <!-- {stu.Position} -->
+                  </div>
+                {/if}
 
                 {#if avatar_size > 60}
                   <div class="name">
@@ -275,12 +280,24 @@
     {/each}
   </div>
 
-  <hr>
 
   <footer>
-    <center>
-      data & image come from <a href="https://github.com/lonqie/SchaleDB">https://github.com/lonqie/SchaleDB</a>
-    </center>
+    <hr>
+    <h1>Blue Archive students filter</h1>
+    <hr>
+    <details open>
+      <summary>
+        url para:
+      </summary>
+      <ul>
+        <li>`name=xxx`: name filter</li>
+        <li>`size=96`: image size</li>
+        <li>`icon=1`: show type icon</li>
+      </ul>
+    </details>
+    <hr>
+
+    data & image come from <a href="https://github.com/lonqie/SchaleDB">https://github.com/lonqie/SchaleDB</a>
   </footer>
 
 </main>
@@ -320,7 +337,7 @@
     background-size: .7rem;
     border-radius: 50%;
     background-color: #f00;
-    opacity: calc(var(--name-op) * 0.75);
+    opacity: calc(var(--name-op) * 0.85);
     /* border: 1px solid #fff; */
   }
   .icon.icon-role {
@@ -385,6 +402,16 @@
       "Sonic-title      Main-Sonic      Support-Sonic";
   }
 
+  @media (max-width: 560px) {
+    .table {
+      grid-template-columns: 3vw 1fr 1fr;
+      gap: .5rem;
+    }
+    .th {
+      font-size: smaller;
+    }
+  }
+
   .cell {
     background-color: #9994;
     padding: .5em .1em .5em .5em;
@@ -410,6 +437,7 @@
   .th {
     color: #999;
     margin: 0;
+    text-align: center;
   }
 
   .filters {
@@ -433,10 +461,23 @@
   .filter-form {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .filters fieldset {
     background-color: rgba(var(--back-color), .5);
+    padding: 2vmin;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer ul {
+    text-align: start;
+    width: fit-content;
+    margin: 0 auto;
+    font-family: monospace;
   }
 
 </style>
