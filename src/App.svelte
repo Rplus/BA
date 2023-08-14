@@ -254,7 +254,6 @@
 
                 {#if show_icons}
                   <div class="icons">
-                    <div class="icon icon-{stu.TacticRole} icon-role" style="background-image: url('{IMG_FOLDER}/ui/Role_{stu.TacticRole}.png')" title={stu.TacticRole}></div>
                     <div class="icon icon-{stu.BulletType}" style="background-image: url('{IMG_FOLDER}/ui/Type_Attack_s.png')" title={stu.BulletType}></div>
                     <div class="icon icon-{stu.ArmorType}" style="background-image: url('{IMG_FOLDER}/ui/Type_Defense_s.png')" title={stu.ArmorType}></div>
                     <!-- {stu.Position} -->
@@ -263,12 +262,19 @@
 
                 {#if avatar_size > 60}
                   <div class="name">
-                    <span>{stu.Name}</span>
+                    <div class="name-inner">
+                      <div class="icon icon-{stu.TacticRole} icon-role" style="background-image: url('{IMG_FOLDER}/ui/Role_{stu.TacticRole}.png')" title={stu.TacticRole}></div>
+                      {stu.Name}
+                    </div>
 
                     <div class="tip">
-                      <a href="https://schale.gg/?chara={stu.PathName}" target="schale.gg">{stu.PathName} 🔗</a>
+                      <a href="https://schale.gg/?chara={stu.PathName}" target="schale.gg">
+                        {stu.PathName}
+                      </a>
                       <br>
-                      <a href="https://bluearchive.wikiru.jp/?{stu.Name_jp}" target="wikiru">{stu.Name_jp} 🔗</a>
+                      <a href="https://bluearchive.wikiru.jp/?{stu.Name_jp}#Profile" target="wikiru">
+                        {stu.Name_jp}
+                      </a>
                     </div>
                   </div>
                 {/if}
@@ -337,11 +343,19 @@
     background-size: .7rem;
     border-radius: 50%;
     background-color: #f00;
-    opacity: calc(var(--name-op) * 0.85);
+    /* opacity: calc(var(--name-op) * 0.85); */
     /* border: 1px solid #fff; */
   }
+  .name-inner {
+    display: flex;
+    align-items: center;
+  }
   .icon.icon-role {
-    background-size: 1rem;
+    width: 1em;
+    height: 1em;
+    margin: 0;
+    background-color: #0000;
+    background-size: 1em;
   }
   .icon-Explosion { background-color: var(--col-bg-explosive); }
   .icon-Piercing { background-color: var(--col-bg-piercing); }
@@ -357,6 +371,7 @@
     bottom: 0;
     right: 0;
     left: 0;
+    z-index: 2;
     padding: 2px;
     font-size: small;
     background-color: rgba(0,0,0,var(--name-bg-op));
@@ -387,6 +402,9 @@
   }
   .tip a:hover {
     color: #ff0;
+  }
+  .tip a::before {
+    content: '🔗 ';
   }
 
   .table {
