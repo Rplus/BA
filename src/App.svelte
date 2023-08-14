@@ -244,7 +244,7 @@
 
             {#each Group_by_SquadType as stu, PathName}
               <div class="student"
-                data-name={stu.Name}
+                data-name={stu.Name_tw}
                 data-position={stu.Position}
                 data-armortype={stu.ArmorType}
                 data-bullettype={stu.BulletType}
@@ -264,7 +264,7 @@
                   <div class="name">
                     <div class="name-inner">
                       <div class="icon icon-{stu.TacticRole} icon-role" style="background-image: url('{IMG_FOLDER}/ui/Role_{stu.TacticRole}.png')" title={stu.TacticRole}></div>
-                      {stu.Name}
+                      {stu.Name_tw}
                     </div>
 
                     <div class="tip">
