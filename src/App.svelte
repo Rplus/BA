@@ -202,7 +202,7 @@
       <div>
         <fieldset>
           <legend>Name</legend>
-          <input type="search" placeholder="name" bind:value={filterName} autofocus>
+          <input type="search" placeholder="name" bind:value={filterName} autofocus accesskey="q">
         </fieldset>
 
         <fieldset>
