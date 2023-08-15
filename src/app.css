@@ -8,6 +8,7 @@
   color-scheme: light dark;
   color: var(--front-color);
   background-color: rgb(var(--back-color));
+  overflow: scroll;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -37,7 +38,6 @@ a:hover {
 body {
   margin-top: 0;
   min-width: 320px;
-  min-height: 100vh;
 }
 
 label:hover {
