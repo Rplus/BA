@@ -250,7 +250,7 @@
                 data-bullettype={stu.BulletType}
                 data-tacticrole={stu.TacticRole}
               >
-                <img class="avatar" src="{IMG_FOLDER}student/collection/{stu.CollectionTexture}.webp" loading="lazy">
+                <img class="avatar" src="{IMG_FOLDER}student/collection/{stu.CollectionTexture}.webp" loading="lazy" alt={stu.Name_tw}>
 
                 {#if show_icons}
                   <div class="icons">
