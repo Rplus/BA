@@ -8,7 +8,7 @@
   color-scheme: light dark;
   color: var(--front-color);
   background-color: rgb(var(--back-color));
-  overflow: scroll;
+  overflow-y: scroll;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
