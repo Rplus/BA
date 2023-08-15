@@ -1,9 +1,6 @@
 <script>
-  // import data_url_tw from './data/students.min.tw.json?url'
-  // import data_url_jp from './data/students.min.jp.json?url'
   import data_url from './data/students.json?url'
   import Student from './lib/Student.svelte'
-  // import data_tw from './data/students.json'
 
   let filterProps = [
     // 'SquadType',
@@ -74,37 +71,39 @@
     update_style();
   }
 
-  async function get_data() {
-    let data_tw = await fetch(data_url).then(d => d.json());
-    // let data_tw = await fetch(data_url_tw).then(d => d.json());
-    // let data_jp = await fetch(data_url_jp).then(d => d.json());
-    // data_tw.forEach((i, index) => {
-    //   i.Name_jp = data_jp[index].Name;
-    // });
-    handle_data(data_tw);
-    gen_filters(data_tw);
-
-    // let raw = data_tw.map((stu, index) => {
-    //   return {
-    //     Name: stu.Name,
-    //     Name_jp: data_jp[index].Name,
-    //     PathName: stu.PathName,
-    //     Position: stu.Position,
-    //     ArmorType: stu.ArmorType,
-    //     SquadType: stu.SquadType,
-    //     BulletType: stu.BulletType,
-    //     TacticRole: stu.TacticRole,
-    //     CollectionTexture: stu.CollectionTexture,
-    //   }
-    // })
-    // console.log(raw);
+  async function get_raw_data() {
+    let data = {
+      tw: await fetch('https://schale.gg/data/tw/students.min.json').then(d => d.json()),
+      jp: await fetch('https://schale.gg/data/jp/students.min.json').then(d => d.json()),
+    };
+    return data.tw.map((i, index) => {
+      return {
+        Name_tw: i.Name,
+        Name_jp: data.jp[index].Name,
+        PathName: i.PathName,
+        Position: i.Position,
+        ArmorType: i.ArmorType,
+        SquadType: i.SquadType,
+        BulletType: i.BulletType,
+        TacticRole: i.TacticRole,
+        CollectionTexture: i.CollectionTexture,
+      }
+    });
   }
 
-  function gen_filters(data_tw) {
+  async function get_data() {
+    // let data = await get_raw_data();
+    let data = await fetch(data_url).then(d => d.json());
+
+    handle_data(data);
+    gen_filters(data);
+  }
+
+  function gen_filters(data) {
     filtersPool = filterProps.map((prop) => {
       return {
         prop,
-        filters: [...new Set(data_tw.map(i => i[prop]))]
+        filters: [...new Set(data.map(i => i[prop]))]
           .map(filter => ({
             label: filter,
             value: false,
@@ -113,10 +112,10 @@
     });
   }
 
-  function handle_data(data_tw) {
+  function handle_data(raw_data) {
     // reset
     data = []
-    data_tw.forEach(student => {
+    raw_data.forEach(student => {
       let place_index = BulletTypes.findIndex(i => i === student.BulletType);
 
       if (!data[place_index]) {
