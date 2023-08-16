@@ -3,7 +3,9 @@
 	export let avatar_size;
 	export let stu = {};
 
-  const IMG_FOLDER = 'https://proxy.duckduckgo.com/iu/?u=https://raw.githubusercontent.com/lonqie/SchaleDB/main/images/';
+	import { const_strs } from '../const.js';
+
+  const IMG_FOLDER = const_strs.IMG_FOLDER;
 
 </script>
 

@@ -2,6 +2,7 @@
   import data_url from './data/students.json?url'
   import Student from './lib/Student.svelte'
   import { words } from './i18n.js'
+  import { const_strs } from './const.js';
 
   let filterProps = [
     // 'SquadType',
@@ -155,13 +156,14 @@
     <form class="filter-form" on:reset={formReset}>
 
       {#each filtersPool as filterCate}
-        <fieldset>
+        <fieldset class="filter-cate__{filterCate.prop}">
           <legend>{_(filterCate.prop)}</legend>
           <div>
             {#each filterCate.filters as filter}
               <div>
-              <label>
+              <label style="--icon-path: url('https://proxy.duckduckgo.com/iu/?u=https://raw.githubusercontent.com/lonqie/SchaleDB/main/images/ui/Role_{filter.label}.png')">
                 <input type="checkbox" bind:checked={filter.value}>
+                <i class="label-icon"></i>
                 {_(filter.label)}
               </label>
               </div>
@@ -245,94 +247,4 @@
 </main>
 
 <style>
-  .table {
-    display: grid;
-    gap: 1em;
-    overflow: hidden;
-    grid-template-columns: 3em 3fr 2fr;
-    grid-template-areas:
-      ".                Main-title      Support-title"
-      "Explosion-title  Main-Explosion  Support-Explosion"
-      "Pierce-title     Main-Pierce     Support-Pierce"
-      "Mystic-title     Main-Mystic     Support-Mystic"
-      "Sonic-title      Main-Sonic      Support-Sonic";
-  }
-
-  @media (max-width: 560px) {
-    .table {
-      grid-template-columns: 3vw 1fr 1fr;
-      gap: .5rem;
-    }
-    .th {
-      font-size: smaller;
-    }
-  }
-
-  .cell {
-    background-color: #9994;
-    padding: .5em .1em .5em .5em;
-    --name-op: .75;
-    --name-bg-op: .5;
-  }
-  .cell:hover,
-  .cell:focus-within {
-    --name-op: .85;
-    --name-bg-op: .65;
-  }
-
-  .cell[data-squad="Main"][data-bullet="Explosion"] { grid-area: Main-Explosion; }
-  .cell[data-squad="Main"][data-bullet="Pierce"] { grid-area: Main-Pierce; }
-  .cell[data-squad="Main"][data-bullet="Mystic"] { grid-area: Main-Mystic; }
-  .cell[data-squad="Main"][data-bullet="Sonic"] { grid-area: Main-Sonic; }
-
-  .cell[data-squad="Support"][data-bullet="Explosion"] { grid-area: Support-Explosion; }
-  .cell[data-squad="Support"][data-bullet="Pierce"] { grid-area: Support-Pierce; }
-  .cell[data-squad="Support"][data-bullet="Mystic"] { grid-area: Support-Mystic; }
-  .cell[data-squad="Support"][data-bullet="Sonic"] { grid-area: Support-Sonic; }
-
-  .th {
-    color: #999;
-    margin: 0;
-    text-align: center;
-  }
-
-  .filters {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: rgb(var(--back-color));
-    padding-bottom: 4px;
-    opacity: 0.75;
-  }
-  .filters summary {
-    text-align: center;
-    font-weight: 900;
-  }
-  .filters[open] {
-    opacity: 1;
-    background-color: rgb(230 230 160 / 30%);
-    backdrop-filter: blur(4px);
-  }
-
-  .filter-form {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .filters fieldset {
-    background-color: rgba(var(--back-color), .5);
-    padding: 2vmin;
-  }
-
-  footer {
-    text-align: center;
-  }
-
-  footer ul {
-    text-align: start;
-    width: fit-content;
-    margin: 0 auto;
-    font-family: monospace;
-  }
 </style>
