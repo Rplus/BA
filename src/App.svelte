@@ -156,6 +156,7 @@
       {#each filtersPool as filterCate}
         <fieldset class="filter-cate__{filterCate.prop}">
           <legend>{_(filterCate.prop)}</legend>
+          <details class="filter-details" open={filterCate.filters.length < 8}>
           <div>
             {#each filterCate.filters as filter}
               <div>
@@ -167,6 +168,7 @@
               </div>
             {/each}
           </div>
+          </details>
         </fieldset>
       {/each}
 
@@ -245,4 +247,12 @@
 </main>
 
 <style>
+  .filter-details summary {
+    position: relative;
+    left: -.5rem;
+    z-index: 1;
+    margin-top: calc(-2vmin - 1.3rem);
+    font-size: small;
+    text-align: left;
+  }
 </style>
