@@ -157,6 +157,7 @@
         <fieldset class="filter-cate__{filterCate.prop}">
           <legend>{_(filterCate.prop)}</legend>
           <details class="filter-details" open={filterCate.filters.length < 8}>
+            <summary></summary>
             <div>
               {#each filterCate.filters as filter}
                 <div>
