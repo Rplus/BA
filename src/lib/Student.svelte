@@ -3,7 +3,7 @@
 	export let avatar_size;
 	export let stu = {};
 
-	import { const_strs } from '../const.js';
+	import { const_strs, _ } from '../const.js';
 
   const IMG_FOLDER = const_strs.IMG_FOLDER;
 

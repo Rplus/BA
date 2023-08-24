@@ -1,8 +1,7 @@
 <script>
   import data_url from './data/students.json?url'
   import Student from './lib/Student.svelte'
-  import { words } from './i18n.js'
-  import { const_strs } from './const.js';
+  import { const_strs, _ } from './const.js';
 
   let filterProps = [
     // 'SquadType',
@@ -129,10 +128,6 @@
 
       data[place_index][student.SquadType === 'Main' ? 0 : 1].push(student);
     })
-  }
-
-  function _(str = '') {
-    return words[str] || str;
   }
 
   function formReset() {
