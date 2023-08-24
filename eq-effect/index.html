@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>裝備效果</title>
+	<script src="eq.js"></script>
+</head>
+<body>
+	<div class="list"></div>
+	<script>
+
+		let words = {
+			'AttackPower_Coefficient': '攻擊力%',
+			'CriticalDamageRate_Base': '暴擊傷害',
+			'CriticalPoint_Base': '暴擊數值',
+			'AccuracyPoint_Base': '命中數值',
+			'MaxHP_Coefficient': 'HP%',
+			'MaxHP_Base': 'HP',
+			'DefensePower_Base': '防禦力',
+			'HealEffectivenessRate_Base': '恢復加持',
+			'DodgePoint_Base': '迴避數值',
+			'OppressionResist_Coefficient': '群控抗性%',
+			'CriticalChanceResistPoint_Base': '暴擊抗性',
+			'CriticalDamageResistRate_Base': '暴傷抗性',
+			'HealPower_Coefficient': '治癒力%',
+			'OppressionPower_Coefficient': '群控加持%',
+		};
+
+		render_html();
+
+		function handle_data() {
+			let get_out = ["Exp", "WeaponExpGrowthA", "WeaponExpGrowthB", "WeaponExpGrowthC", "WeaponExpGrowthZ", ]
+
+			return data
+				.filter(i => {
+					return (i.Icon.indexOf('_Piece') === -1) &&
+						(get_out.indexOf(i.Category) === -1)
+				})
+				.map(i => {
+					return {
+						Category: i.Category,
+						Name: i.Name,
+						Tier: i.Tier,
+						Stat: i.StatType.map((j, index) => ({type: j, value: i.StatValue[index][1]})),
+					}
+				});
+		}
+
+		console.log(handle_data());
+
+		function render_html() {
+			let statCount = 1;
+			let html = handle_data().map(i => {
+				if (i.Tier === 1) {
+					statCount = 1;
+				}
+				let upgrade = (i.Stat.length > statCount) && (i.Tier !== 1);
+				statCount = i.Stat.length;
+				let trs = i.Stat.map((stat, index) => {
+					let value = stat.value;
+					if (stat.type.indexOf('_Coefficient') !== -1) {
+						value = (value / 100) + '%';
+					}
+					return `<tr><th>${_(stat.type)}</th><td>${value}</td></tr>`
+				})
+				let table = `<table>${trs.join('')}</table>`
+
+				return `<div
+					class="cell ${upgrade ? 'cell-upgrade' : ''} cate-${i.Category} tier-${i.Tier}"
+					style="grid-column: ${i.Tier} / span 1;"
+					data-tier="${i.Tier}">
+						${i.Name}
+						${table}
+					<details><pre>${JSON.stringify(i,null,2)}</pre></details>
+				</div>`
+				}).join('');
+
+			document.querySelector('.list').innerHTML = html;
+		}
+
+		function _(str = '') {
+			return words[str] || str;
+		}
+	</script>
+
+	<style>
+		body {
+			background-color: #ddd;
+		}
+		.list {
+			display: grid;
+			grid-template-columns: repeat(8, 1fr);
+			grid-template-rows: repeat(9, 1fr);
+			gap: .5em;
+			margin: 0 auto;
+			max-width: 1400px;
+		}
+		.cell {
+			position: relative;
+			padding: 2px 0.25em;
+			background-color: #cc9c;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		.cell-upgrade {
+			background-color: #0003;
+			background-color: #cc39;
+		}
+
+		.cell::before {
+			content: attr(data-tier);
+			display: inline-block;
+			position: absolute;
+			bottom: .3em;
+			right: -.1em;
+			font-weight: 900;
+			font-size: 5em;
+			line-height: 0;
+			opacity: 0.04;
+		}
+		details {
+			position: absolute;
+			background-color: #fff;
+			display: none;
+		}
+		details[open] {
+			z-index: 10;
+		}
+		th {
+			position: relative;
+			text-align: right;
+			font-weight: 500;
+			opacity: 0.5;
+		}
+		th::after {
+			content: ' /';
+			color: #aaa;
+		}
+		table	{
+			margin-left: 1vw;
+			margin-top: .5em;
+			font-size: 10px;
+			line-height: 1.1;
+			border-collapse: collapse;
+		}
+		td {
+			font-size: larger;
+		}
+	</style>
+
+</body>
+</html>
