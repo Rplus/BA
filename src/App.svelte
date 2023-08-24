@@ -157,17 +157,17 @@
         <fieldset class="filter-cate__{filterCate.prop}">
           <legend>{_(filterCate.prop)}</legend>
           <details class="filter-details" open={filterCate.filters.length < 8}>
-          <div>
-            {#each filterCate.filters as filter}
-              <div>
-              <label style="--icon-path: url('https://proxy.duckduckgo.com/iu/?u=https://raw.githubusercontent.com/lonqie/SchaleDB/main/images/ui/Role_{filter.label}.png')">
-                <input type="checkbox" bind:checked={filter.value}>
-                <i class="label-icon"></i>
-                {_(filter.label)}
-              </label>
-              </div>
-            {/each}
-          </div>
+            <div>
+              {#each filterCate.filters as filter}
+                <div>
+                <label style="--icon-path: url('https://proxy.duckduckgo.com/iu/?u=https://raw.githubusercontent.com/lonqie/SchaleDB/main/images/ui/Role_{filter.label}.png')">
+                  <input type="checkbox" bind:checked={filter.value}>
+                  <i class="label-icon"></i>
+                  {_(filter.label)}
+                </label>
+                </div>
+              {/each}
+            </div>
           </details>
         </fieldset>
       {/each}
