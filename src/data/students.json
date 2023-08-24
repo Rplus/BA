@@ -2,6 +2,7 @@
   {
     "Name_tw": "亞瑠",
     "Name_jp": "アル",
+    "School": "Gehenna",
     "PathName": "Aru",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -13,6 +14,7 @@
   {
     "Name_tw": "英美",
     "Name_jp": "エイミ",
+    "School": "Millennium",
     "PathName": "Eimi",
     "Position": "Front",
     "ArmorType": "LightArmor",
@@ -24,6 +26,7 @@
   {
     "Name_tw": "羽留奈",
     "Name_jp": "ハルナ",
+    "School": "Gehenna",
     "PathName": "Haruna",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -35,6 +38,7 @@
   {
     "Name_tw": "日步美",
     "Name_jp": "ヒフミ",
+    "School": "Trinity",
     "PathName": "Hifumi",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -46,6 +50,7 @@
   {
     "Name_tw": "陽奈",
     "Name_jp": "ヒナ",
+    "School": "Gehenna",
     "PathName": "Hina",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -57,6 +62,7 @@
   {
     "Name_tw": "星野",
     "Name_jp": "ホシノ",
+    "School": "Abydos",
     "PathName": "Hoshino",
     "Position": "Front",
     "ArmorType": "HeavyArmor",
@@ -68,6 +74,7 @@
   {
     "Name_tw": "伊織",
     "Name_jp": "イオリ",
+    "School": "Gehenna",
     "PathName": "Iori",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -79,6 +86,7 @@
   {
     "Name_tw": "真紀",
     "Name_jp": "マキ",
+    "School": "Millennium",
     "PathName": "Maki",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -90,6 +98,7 @@
   {
     "Name_tw": "寧瑠",
     "Name_jp": "ネル",
+    "School": "Millennium",
     "PathName": "Neru",
     "Position": "Front",
     "ArmorType": "LightArmor",
@@ -101,6 +110,7 @@
   {
     "Name_tw": "泉",
     "Name_jp": "イズミ",
+    "School": "Gehenna",
     "PathName": "Izumi",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -112,6 +122,7 @@
   {
     "Name_tw": "白子",
     "Name_jp": "シロコ",
+    "School": "Abydos",
     "PathName": "Shiroko",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -123,6 +134,7 @@
   {
     "Name_tw": "旬",
     "Name_jp": "シュン",
+    "School": "Shanhaijing",
     "PathName": "Shun",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -134,6 +146,7 @@
   {
     "Name_tw": "堇",
     "Name_jp": "スミレ",
+    "School": "Millennium",
     "PathName": "Sumire",
     "Position": "Front",
     "ArmorType": "Unarmed",
@@ -145,6 +158,7 @@
   {
     "Name_tw": "弦生",
     "Name_jp": "ツルギ",
+    "School": "Trinity",
     "PathName": "Tsurugi",
     "Position": "Front",
     "ArmorType": "HeavyArmor",
@@ -156,6 +170,7 @@
   {
     "Name_tw": "朱音",
     "Name_jp": "アカネ",
+    "School": "Millennium",
     "PathName": "Akane",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -167,6 +182,7 @@
   {
     "Name_tw": "知世",
     "Name_jp": "チセ",
+    "School": "Hyakkiyako",
     "PathName": "Chise",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -178,6 +194,7 @@
   {
     "Name_tw": "亞伽里",
     "Name_jp": "アカリ",
+    "School": "Gehenna",
     "PathName": "Akari",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -189,6 +206,7 @@
   {
     "Name_tw": "蓮實",
     "Name_jp": "ハスミ",
+    "School": "Trinity",
     "PathName": "Hasumi",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -200,6 +218,7 @@
   {
     "Name_tw": "野乃美",
     "Name_jp": "ノノミ",
+    "School": "Abydos",
     "PathName": "Nonomi",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -211,6 +230,7 @@
   {
     "Name_tw": "佳世子",
     "Name_jp": "カヨコ",
+    "School": "Gehenna",
     "PathName": "Kayoko",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -222,6 +242,7 @@
   {
     "Name_tw": "無月",
     "Name_jp": "ムツキ",
+    "School": "Gehenna",
     "PathName": "Mutsuki",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -233,6 +254,7 @@
   {
     "Name_tw": "淳子",
     "Name_jp": "ジュンコ",
+    "School": "Gehenna",
     "PathName": "Junko",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -244,6 +266,7 @@
   {
     "Name_tw": "茜香",
     "Name_jp": "セリカ",
+    "School": "Abydos",
     "PathName": "Serika",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -255,6 +278,7 @@
   {
     "Name_tw": "椿",
     "Name_jp": "ツバキ",
+    "School": "Hyakkiyako",
     "PathName": "Tsubaki",
     "Position": "Front",
     "ArmorType": "Unarmed",
@@ -266,6 +290,7 @@
   {
     "Name_tw": "優香",
     "Name_jp": "ユウカ",
+    "School": "Millennium",
     "PathName": "Yuuka",
     "Position": "Front",
     "ArmorType": "HeavyArmor",
@@ -277,6 +302,7 @@
   {
     "Name_tw": "遙香",
     "Name_jp": "ハルカ",
+    "School": "Gehenna",
     "PathName": "Haruka",
     "Position": "Front",
     "ArmorType": "LightArmor",
@@ -288,6 +314,7 @@
   {
     "Name_tw": "明日奈",
     "Name_jp": "アスナ",
+    "School": "Millennium",
     "PathName": "Asuna",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -299,6 +326,7 @@
   {
     "Name_tw": "亞都梨",
     "Name_jp": "コトリ",
+    "School": "Millennium",
     "PathName": "Kotori",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -310,6 +338,7 @@
   {
     "Name_tw": "鈴美",
     "Name_jp": "スズミ",
+    "School": "Trinity",
     "PathName": "Suzumi",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -321,6 +350,7 @@
   {
     "Name_tw": "菲娜",
     "Name_jp": "フィーナ",
+    "School": "Hyakkiyako",
     "PathName": "Pina",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -332,6 +362,7 @@
   {
     "Name_tw": "響",
     "Name_jp": "ヒビキ",
+    "School": "Millennium",
     "PathName": "Hibiki",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -343,6 +374,7 @@
   {
     "Name_tw": "花凛",
     "Name_jp": "カリン",
+    "School": "Millennium",
     "PathName": "Karin",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -354,6 +386,7 @@
   {
     "Name_tw": "沙耶",
     "Name_jp": "サヤ",
+    "School": "Shanhaijing",
     "PathName": "Saya",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -365,6 +398,7 @@
   {
     "Name_tw": "愛莉",
     "Name_jp": "アイリ",
+    "School": "Trinity",
     "PathName": "Airi",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -376,6 +410,7 @@
   {
     "Name_tw": "風華",
     "Name_jp": "フウカ",
+    "School": "Gehenna",
     "PathName": "Fuuka",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -387,6 +422,7 @@
   {
     "Name_tw": "花繪",
     "Name_jp": "ハナエ",
+    "School": "Trinity",
     "PathName": "Hanae",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -398,6 +434,7 @@
   {
     "Name_tw": "晴",
     "Name_jp": "ハレ",
+    "School": "Millennium",
     "PathName": "Hare",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -409,6 +446,7 @@
   {
     "Name_tw": "詠葉",
     "Name_jp": "ウタハ",
+    "School": "Millennium",
     "PathName": "Utaha",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -420,6 +458,7 @@
   {
     "Name_tw": "綾音",
     "Name_jp": "アヤネ",
+    "School": "Abydos",
     "PathName": "Ayane",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -431,6 +470,7 @@
   {
     "Name_tw": "千夏",
     "Name_jp": "チナツ",
+    "School": "Gehenna",
     "PathName": "Chinatsu",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -442,6 +482,7 @@
   {
     "Name_tw": "小玉",
     "Name_jp": "コタマ",
+    "School": "Millennium",
     "PathName": "Kotama",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -453,6 +494,7 @@
   {
     "Name_tw": "茱莉",
     "Name_jp": "ジュリ",
+    "School": "Gehenna",
     "PathName": "Juri",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -464,6 +506,7 @@
   {
     "Name_tw": "芹奈",
     "Name_jp": "セリナ",
+    "School": "Trinity",
     "PathName": "Serina",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -475,6 +518,7 @@
   {
     "Name_tw": "志美子",
     "Name_jp": "シミコ",
+    "School": "Trinity",
     "PathName": "Shimiko",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -486,6 +530,7 @@
   {
     "Name_tw": "喜美",
     "Name_jp": "ヨシミ",
+    "School": "Trinity",
     "PathName": "Yoshimi",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -497,6 +542,7 @@
   {
     "Name_tw": "麻白",
     "Name_jp": "マシロ",
+    "School": "Trinity",
     "PathName": "Mashiro",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -508,6 +554,7 @@
   {
     "Name_tw": "伊樹菜",
     "Name_jp": "イズナ",
+    "School": "Hyakkiyako",
     "PathName": "Izuna",
     "Position": "Front",
     "ArmorType": "LightArmor",
@@ -519,6 +566,7 @@
   {
     "Name_tw": "靜子",
     "Name_jp": "シズコ",
+    "School": "Hyakkiyako",
     "PathName": "Shizuko",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -530,6 +578,7 @@
   {
     "Name_tw": "愛麗絲",
     "Name_jp": "アリス",
+    "School": "Millennium",
     "PathName": "Aris",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -541,6 +590,7 @@
   {
     "Name_tw": "綠",
     "Name_jp": "ミドリ",
+    "School": "Millennium",
     "PathName": "Midori",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -552,6 +602,7 @@
   {
     "Name_tw": "桃井",
     "Name_jp": "モモイ",
+    "School": "Millennium",
     "PathName": "Momoi",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -563,6 +614,7 @@
   {
     "Name_tw": "潔莉諾",
     "Name_jp": "チェリノ",
+    "School": "RedWinter",
     "PathName": "Cherino",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -574,6 +626,7 @@
   {
     "Name_tw": "和香",
     "Name_jp": "ノドカ",
+    "School": "RedWinter",
     "PathName": "Nodoka",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -585,6 +638,7 @@
   {
     "Name_tw": "柚子",
     "Name_jp": "ユズ",
+    "School": "Millennium",
     "PathName": "Yuzu",
     "Position": "Middle",
     "ArmorType": "Unarmed",
@@ -596,6 +650,7 @@
   {
     "Name_tw": "梓",
     "Name_jp": "アズサ",
+    "School": "Trinity",
     "PathName": "Azusa",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -607,6 +662,7 @@
   {
     "Name_tw": "花子",
     "Name_jp": "ハナコ",
+    "School": "Trinity",
     "PathName": "Hanako",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -618,6 +674,7 @@
   {
     "Name_tw": "小春",
     "Name_jp": "コハル",
+    "School": "Trinity",
     "PathName": "Koharu",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -629,6 +686,7 @@
   {
     "Name_tw": "梓(泳裝)",
     "Name_jp": "アズサ（水着）",
+    "School": "Trinity",
     "PathName": "Azusa_Swimsuit",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -640,6 +698,7 @@
   {
     "Name_tw": "麻白(泳裝)",
     "Name_jp": "マシロ（水着）",
+    "School": "Trinity",
     "PathName": "Mashiro_Swimsuit",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -651,6 +710,7 @@
   {
     "Name_tw": "弦生(泳裝)",
     "Name_jp": "ツルギ（水着）",
+    "School": "Trinity",
     "PathName": "Tsurugi_Swimsuit",
     "Position": "Front",
     "ArmorType": "Unarmed",
@@ -662,6 +722,7 @@
   {
     "Name_tw": "日步美(泳裝)",
     "Name_jp": "ヒフミ（水着）",
+    "School": "Trinity",
     "PathName": "Hifumi_Swimsuit",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -673,6 +734,7 @@
   {
     "Name_tw": "陽奈(泳裝)",
     "Name_jp": "ヒナ（水着）",
+    "School": "Gehenna",
     "PathName": "Hina_Swimsuit",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -684,6 +746,7 @@
   {
     "Name_tw": "伊織(泳裝)",
     "Name_jp": "イオリ（水着）",
+    "School": "Gehenna",
     "PathName": "Iori_Swimsuit",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -695,6 +758,7 @@
   {
     "Name_tw": "泉(泳裝)",
     "Name_jp": "イズミ（水着）",
+    "School": "Gehenna",
     "PathName": "Izumi_Swimsuit",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -706,6 +770,7 @@
   {
     "Name_tw": "白子(單車)",
     "Name_jp": "シロコ（ライディング）",
+    "School": "Abydos",
     "PathName": "Shiroko_Cycling",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -717,6 +782,7 @@
   {
     "Name_tw": "旬(幼女)",
     "Name_jp": "シュン（幼女）",
+    "School": "Shanhaijing",
     "PathName": "Shun_Small",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -728,6 +794,7 @@
   {
     "Name_tw": "桐乃",
     "Name_jp": "キリノ",
+    "School": "Valkyrie",
     "PathName": "Kirino",
     "Position": "Middle",
     "ArmorType": "Unarmed",
@@ -739,6 +806,7 @@
   {
     "Name_tw": "沙耶(私服)",
     "Name_jp": "サヤ（私服）",
+    "School": "Shanhaijing",
     "PathName": "Saya_Casual",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -750,6 +818,7 @@
   {
     "Name_tw": "寧瑠(兔女郎)",
     "Name_jp": "ネル（バニーガール）",
+    "School": "Millennium",
     "PathName": "Neru_Bunny",
     "Position": "Front",
     "ArmorType": "HeavyArmor",
@@ -761,6 +830,7 @@
   {
     "Name_tw": "花凛(兔女郎)",
     "Name_jp": "カリン（バニーガール）",
+    "School": "Millennium",
     "PathName": "Karin_Bunny",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -772,6 +842,7 @@
   {
     "Name_tw": "明日奈(兔女郎)",
     "Name_jp": "アスナ（バニーガール）",
+    "School": "Millennium",
     "PathName": "Asuna_Bunny",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -783,6 +854,7 @@
   {
     "Name_tw": "夏",
     "Name_jp": "ナツ",
+    "School": "Trinity",
     "PathName": "Natsu",
     "Position": "Front",
     "ArmorType": "HeavyArmor",
@@ -794,6 +866,7 @@
   {
     "Name_tw": "瑪麗",
     "Name_jp": "マリー",
+    "School": "Trinity",
     "PathName": "Mari",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -805,6 +878,7 @@
   {
     "Name_tw": "初音未來",
     "Name_jp": "初音ミク",
+    "School": "ETC",
     "PathName": "Hatsune_Miku",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -816,6 +890,7 @@
   {
     "Name_tw": "亞子",
     "Name_jp": "アコ",
+    "School": "Gehenna",
     "PathName": "Ako",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -827,6 +902,7 @@
   {
     "Name_tw": "潔莉諾(溫泉)",
     "Name_jp": "チェリノ（温泉）",
+    "School": "RedWinter",
     "PathName": "Cherino_HotSpring",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -838,6 +914,7 @@
   {
     "Name_tw": "千夏(溫泉)",
     "Name_jp": "チナツ（温泉）",
+    "School": "Gehenna",
     "PathName": "Chinatsu_HotSpring",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -849,6 +926,7 @@
   {
     "Name_tw": "智惠",
     "Name_jp": "トモエ",
+    "School": "RedWinter",
     "PathName": "Tomoe",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -860,6 +938,7 @@
   {
     "Name_tw": "和香(溫泉)",
     "Name_jp": "ノドカ（温泉）",
+    "School": "RedWinter",
     "PathName": "Nodoka_HotSpring",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -871,6 +950,7 @@
   {
     "Name_tw": "亞瑠(正月)",
     "Name_jp": "アル（正月）",
+    "School": "Gehenna",
     "PathName": "Aru_NewYear",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -882,6 +962,7 @@
   {
     "Name_tw": "無月(正月)",
     "Name_jp": "ムツキ（正月）",
+    "School": "Gehenna",
     "PathName": "Mutsuki_NewYear",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -893,6 +974,7 @@
   {
     "Name_tw": "茜香(正月)",
     "Name_jp": "セリカ（正月）",
+    "School": "Abydos",
     "PathName": "Serika_NewYear",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -904,6 +986,7 @@
   {
     "Name_tw": "若藻",
     "Name_jp": "ワカモ",
+    "School": "Hyakkiyako",
     "PathName": "Wakamo",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -915,6 +998,7 @@
   {
     "Name_tw": "吹雪",
     "Name_jp": "フブキ",
+    "School": "Valkyrie",
     "PathName": "Fubuki",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -926,6 +1010,7 @@
   {
     "Name_tw": "瀬奈",
     "Name_jp": "セナ",
+    "School": "Gehenna",
     "PathName": "Sena",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -937,6 +1022,7 @@
   {
     "Name_tw": "千尋",
     "Name_jp": "チヒロ",
+    "School": "Millennium",
     "PathName": "Chihiro",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -948,6 +1034,7 @@
   {
     "Name_tw": "三森",
     "Name_jp": "ミモリ",
+    "School": "Hyakkiyako",
     "PathName": "Mimori",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -959,6 +1046,7 @@
   {
     "Name_tw": "憂",
     "Name_jp": "ウイ",
+    "School": "Trinity",
     "PathName": "Ui",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -970,6 +1058,7 @@
   {
     "Name_tw": "日向",
     "Name_jp": "ヒナタ",
+    "School": "Trinity",
     "PathName": "Hinata",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -981,6 +1070,7 @@
   {
     "Name_tw": "瑪麗娜",
     "Name_jp": "マリナ",
+    "School": "RedWinter",
     "PathName": "Marina",
     "Position": "Front",
     "ArmorType": "LightArmor",
@@ -992,6 +1082,7 @@
   {
     "Name_tw": "都子",
     "Name_jp": "ミヤコ",
+    "School": "SRT",
     "PathName": "Miyako",
     "Position": "Front",
     "ArmorType": "HeavyArmor",
@@ -1003,6 +1094,7 @@
   {
     "Name_tw": "咲希",
     "Name_jp": "サキ",
+    "School": "SRT",
     "PathName": "Saki",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -1014,6 +1106,7 @@
   {
     "Name_tw": "美優",
     "Name_jp": "ミユ",
+    "School": "SRT",
     "PathName": "Miyu",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1025,6 +1118,7 @@
   {
     "Name_tw": "楓",
     "Name_jp": "カエデ",
+    "School": "Hyakkiyako",
     "PathName": "Kaede",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -1036,6 +1130,7 @@
   {
     "Name_tw": "伊呂波",
     "Name_jp": "イロハ",
+    "School": "Gehenna",
     "PathName": "Iroha",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -1047,6 +1142,7 @@
   {
     "Name_tw": "三千留",
     "Name_jp": "ミチル",
+    "School": "Hyakkiyako",
     "PathName": "Michiru",
     "Position": "Front",
     "ArmorType": "LightArmor",
@@ -1058,6 +1154,7 @@
   {
     "Name_tw": "月夜",
     "Name_jp": "ツクヨ",
+    "School": "Hyakkiyako",
     "PathName": "Tsukuyo",
     "Position": "Front",
     "ArmorType": "LightArmor",
@@ -1069,6 +1166,7 @@
   {
     "Name_tw": "美咲",
     "Name_jp": "ミサキ",
+    "School": "Arius",
     "PathName": "Misaki",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -1080,6 +1178,7 @@
   {
     "Name_tw": "日和",
     "Name_jp": "ヒヨリ",
+    "School": "Arius",
     "PathName": "Hiyori",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1091,6 +1190,7 @@
   {
     "Name_tw": "敦子",
     "Name_jp": "アツコ",
+    "School": "Arius",
     "PathName": "Atsuko",
     "Position": "Front",
     "ArmorType": "Unarmed",
@@ -1102,6 +1202,7 @@
   {
     "Name_tw": "若藻(泳裝)",
     "Name_jp": "ワカモ（水着）",
+    "School": "Hyakkiyako",
     "PathName": "Wakamo_Swimsuit",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -1113,6 +1214,7 @@
   {
     "Name_tw": "野乃美(泳裝)",
     "Name_jp": "ノノミ（水着）",
+    "School": "Abydos",
     "PathName": "Nonomi_Swimsuit",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -1124,6 +1226,7 @@
   {
     "Name_tw": "綾音(泳裝)",
     "Name_jp": "アヤネ（水着）",
+    "School": "Abydos",
     "PathName": "Ayane_Swimsuit",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1135,6 +1238,7 @@
   {
     "Name_tw": "星野(泳裝)",
     "Name_jp": "ホシノ（水着）",
+    "School": "Abydos",
     "PathName": "Hoshino_Swimsuit",
     "Position": "Front",
     "ArmorType": "Unarmed",
@@ -1146,6 +1250,7 @@
   {
     "Name_tw": "靜子(泳裝)",
     "Name_jp": "シズコ（水着）",
+    "School": "Hyakkiyako",
     "PathName": "Shizuko_Swimsuit",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -1157,6 +1262,7 @@
   {
     "Name_tw": "伊樹菜(泳裝)",
     "Name_jp": "イズナ（水着）",
+    "School": "Hyakkiyako",
     "PathName": "Izuna_Swimsuit",
     "Position": "Front",
     "ArmorType": "Unarmed",
@@ -1168,6 +1274,7 @@
   {
     "Name_tw": "知世(泳裝)",
     "Name_jp": "チセ（水着）",
+    "School": "Hyakkiyako",
     "PathName": "Chise_Swimsuit",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -1179,6 +1286,7 @@
   {
     "Name_tw": "沙織",
     "Name_jp": "サオリ",
+    "School": "Arius",
     "PathName": "Saori",
     "Position": "Middle",
     "ArmorType": "Unarmed",
@@ -1190,6 +1298,7 @@
   {
     "Name_tw": "萌",
     "Name_jp": "モエ",
+    "School": "SRT",
     "PathName": "Moe",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1201,6 +1310,7 @@
   {
     "Name_tw": "千紗",
     "Name_jp": "カズサ",
+    "School": "Trinity",
     "PathName": "Kazusa",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -1212,6 +1322,7 @@
   {
     "Name_tw": "心菜",
     "Name_jp": "ココナ",
+    "School": "Shanhaijing",
     "PathName": "Kokona",
     "Position": "Middle",
     "ArmorType": "Unarmed",
@@ -1223,6 +1334,7 @@
   {
     "Name_tw": "詠葉(應援團)",
     "Name_jp": "ウタハ（応援団）",
+    "School": "Millennium",
     "PathName": "Utaha_Cheerleader",
     "Position": "Front",
     "ArmorType": "Unarmed",
@@ -1234,6 +1346,7 @@
   {
     "Name_tw": "乃愛",
     "Name_jp": "ノア",
+    "School": "Millennium",
     "PathName": "Noa",
     "Position": "Middle",
     "ArmorType": "Unarmed",
@@ -1245,6 +1358,7 @@
   {
     "Name_tw": "響(應援團)",
     "Name_jp": "ヒビキ（応援団）",
+    "School": "Millennium",
     "PathName": "Hibiki_Cheerleader",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1256,6 +1370,7 @@
   {
     "Name_tw": "朱音(兔女郎)",
     "Name_jp": "アカネ（バニーガール）",
+    "School": "Millennium",
     "PathName": "Akane_Bunny",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -1267,6 +1382,7 @@
   {
     "Name_tw": "優香(體育服)",
     "Name_jp": "ユウカ（体操服）",
+    "School": "Millennium",
     "PathName": "Yuuka_Track",
     "Position": "Front",
     "ArmorType": "Unarmed",
@@ -1278,6 +1394,7 @@
   {
     "Name_tw": "瑪麗(體育服)",
     "Name_jp": "マリー（体操服）",
+    "School": "Trinity",
     "PathName": "Mari_Track",
     "Position": "Middle",
     "ArmorType": "Unarmed",
@@ -1289,6 +1406,7 @@
   {
     "Name_tw": "蓮實(體育服)",
     "Name_jp": "ハスミ（体操服）",
+    "School": "Trinity",
     "PathName": "Hasumi_Track",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -1300,6 +1418,7 @@
   {
     "Name_tw": "陽葵",
     "Name_jp": "ヒマリ",
+    "School": "Millennium",
     "PathName": "Himari",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1311,6 +1430,7 @@
   {
     "Name_tw": "時雨",
     "Name_jp": "シグレ",
+    "School": "RedWinter",
     "PathName": "Shigure",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -1322,6 +1442,7 @@
   {
     "Name_tw": "芹奈(聖誕節)",
     "Name_jp": "セリナ（クリスマス）",
+    "School": "Trinity",
     "PathName": "Serina_Christmas",
     "Position": "Middle",
     "ArmorType": "Unarmed",
@@ -1333,6 +1454,7 @@
   {
     "Name_tw": "花繪(聖誕節)",
     "Name_jp": "ハナエ（クリスマス）",
+    "School": "Trinity",
     "PathName": "Hanae_Christmas",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -1344,6 +1466,7 @@
   {
     "Name_tw": "羽留奈(正月)",
     "Name_jp": "ハルナ（正月）",
+    "School": "Gehenna",
     "PathName": "Haruna_NewYear",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1355,6 +1478,7 @@
   {
     "Name_tw": "風華(正月)",
     "Name_jp": "フウカ（正月）",
+    "School": "Gehenna",
     "PathName": "Fuuka_NewYear",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -1366,6 +1490,7 @@
   {
     "Name_tw": "淳子(正月)",
     "Name_jp": "ジュンコ（正月）",
+    "School": "Gehenna",
     "PathName": "Junko_NewYear",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -1377,6 +1502,7 @@
   {
     "Name_tw": "美禰",
     "Name_jp": "ミネ",
+    "School": "Trinity",
     "PathName": "Mine",
     "Position": "Front",
     "ArmorType": "LightArmor",
@@ -1388,6 +1514,7 @@
   {
     "Name_tw": "彌香",
     "Name_jp": "ミカ",
+    "School": "Trinity",
     "PathName": "Mika",
     "Position": "Front",
     "ArmorType": "LightArmor",
@@ -1399,6 +1526,7 @@
   {
     "Name_tw": "惠",
     "Name_jp": "メグ",
+    "School": "Gehenna",
     "PathName": "Megu",
     "Position": "Front",
     "ArmorType": "Unarmed",
@@ -1410,6 +1538,7 @@
   {
     "Name_tw": "環奈",
     "Name_jp": "カンナ",
+    "School": "Valkyrie",
     "PathName": "Kanna",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -1421,6 +1550,7 @@
   {
     "Name_tw": "櫻子",
     "Name_jp": "サクラコ",
+    "School": "Trinity",
     "PathName": "Sakurako",
     "Position": "Middle",
     "ArmorType": "Unarmed",
@@ -1432,6 +1562,7 @@
   {
     "Name_tw": "季",
     "Name_jp": "トキ",
+    "School": "Millennium",
     "PathName": "Toki",
     "Position": "Middle",
     "ArmorType": "ElasticArmor",
@@ -1443,6 +1574,7 @@
   {
     "Name_tw": "渚",
     "Name_jp": "ナギサ",
+    "School": "Trinity",
     "PathName": "Nagisa",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -1454,6 +1586,7 @@
   {
     "Name_tw": "小雪",
     "Name_jp": "コユキ",
+    "School": "Millennium",
     "PathName": "Koyuki",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -1465,6 +1598,7 @@
   {
     "Name_tw": "カヨコ（正月）",
     "Name_jp": "カヨコ（正月）",
+    "School": "Gehenna",
     "PathName": "Kayoko_NewYear",
     "Position": "Middle",
     "ArmorType": "Unarmed",
@@ -1476,6 +1610,7 @@
   {
     "Name_tw": "ハルカ（正月）",
     "Name_jp": "ハルカ（正月）",
+    "School": "Gehenna",
     "PathName": "Haruka_NewYear",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1487,6 +1622,7 @@
   {
     "Name_tw": "カホ",
     "Name_jp": "カホ",
+    "School": "Hyakkiyako",
     "PathName": "Kaho",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -1498,6 +1634,7 @@
   {
     "Name_tw": "アリス（メイド）",
     "Name_jp": "アリス（メイド）",
+    "School": "Millennium",
     "PathName": "Aris_Maid",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1509,6 +1646,7 @@
   {
     "Name_tw": "トキ（バニーガール）",
     "Name_jp": "トキ（バニーガール）",
+    "School": "Millennium",
     "PathName": "Toki_Bunny",
     "Position": "Middle",
     "ArmorType": "LightArmor",
@@ -1520,6 +1658,7 @@
   {
     "Name_tw": "ユズ（メイド）",
     "Name_jp": "ユズ（メイド）",
+    "School": "Millennium",
     "PathName": "Yuzu_Maid",
     "Position": "Back",
     "ArmorType": "ElasticArmor",
@@ -1531,6 +1670,7 @@
   {
     "Name_tw": "レイサ",
     "Name_jp": "レイサ",
+    "School": "Trinity",
     "PathName": "Reisa",
     "Position": "Front",
     "ArmorType": "HeavyArmor",
@@ -1542,6 +1682,7 @@
   {
     "Name_tw": "ルミ",
     "Name_jp": "ルミ",
+    "School": "Shanhaijing",
     "PathName": "Rumi",
     "Position": "Front",
     "ArmorType": "HeavyArmor",
@@ -1553,6 +1694,7 @@
   {
     "Name_tw": "ミナ",
     "Name_jp": "ミナ",
+    "School": "Shanhaijing",
     "PathName": "Mina",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -1564,6 +1706,7 @@
   {
     "Name_tw": "ミノリ",
     "Name_jp": "ミノリ",
+    "School": "RedWinter",
     "PathName": "Minori",
     "Position": "Back",
     "ArmorType": "Unarmed",
@@ -1575,6 +1718,7 @@
   {
     "Name_tw": "ミヤコ（水着）",
     "Name_jp": "ミヤコ（水着）",
+    "School": "SRT",
     "PathName": "Miyako_Swimsuit",
     "Position": "Front",
     "ArmorType": "HeavyArmor",
@@ -1586,6 +1730,7 @@
   {
     "Name_tw": "サキ（水着）",
     "Name_jp": "サキ（水着）",
+    "School": "SRT",
     "PathName": "Saki_Swimsuit",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -1597,6 +1742,7 @@
   {
     "Name_tw": "ミユ（水着）",
     "Name_jp": "ミユ（水着）",
+    "School": "SRT",
     "PathName": "Miyu_Swimsuit",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1608,6 +1754,7 @@
   {
     "Name_tw": "シロコ（水着）",
     "Name_jp": "シロコ（水着）",
+    "School": "Abydos",
     "PathName": "Shiroko_Swimsuit",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1619,6 +1766,7 @@
   {
     "Name_tw": "ウイ（水着）",
     "Name_jp": "ウイ（水着）",
+    "School": "Trinity",
     "PathName": "Ui_Swimsuit",
     "Position": "Back",
     "ArmorType": "ElasticArmor",
@@ -1630,6 +1778,7 @@
   {
     "Name_tw": "ヒナタ（水着）",
     "Name_jp": "ヒナタ（水着）",
+    "School": "Trinity",
     "PathName": "Hinata_Swimsuit",
     "Position": "Back",
     "ArmorType": "LightArmor",
@@ -1641,6 +1790,7 @@
   {
     "Name_tw": "コハル（水着）",
     "Name_jp": "コハル（水着）",
+    "School": "Trinity",
     "PathName": "Koharu_Swimsuit",
     "Position": "Back",
     "ArmorType": "HeavyArmor",
@@ -1652,6 +1802,7 @@
   {
     "Name_tw": "ハナコ（水着）",
     "Name_jp": "ハナコ（水着）",
+    "School": "Trinity",
     "PathName": "Hanako_Swimsuit",
     "Position": "Middle",
     "ArmorType": "HeavyArmor",
@@ -1659,5 +1810,41 @@
     "BulletType": "Sonic",
     "TacticRole": "DamageDealer",
     "CollectionTexture": "Student_Portrait_CH0209_Collection"
+  },
+  {
+    "Name_tw": "ミモリ（水着）",
+    "Name_jp": "ミモリ（水着）",
+    "School": "Hyakkiyako",
+    "PathName": "Mimori_Swimsuit",
+    "Position": "Back",
+    "ArmorType": "Unarmed",
+    "SquadType": "Support",
+    "BulletType": "Mystic",
+    "TacticRole": "Supporter",
+    "CollectionTexture": "Student_Portrait_CH0183_Collection"
+  },
+  {
+    "Name_tw": "メル",
+    "Name_jp": "メル",
+    "School": "RedWinter",
+    "PathName": "Meru",
+    "Position": "Middle",
+    "ArmorType": "LightArmor",
+    "SquadType": "Main",
+    "BulletType": "Pierce",
+    "TacticRole": "DamageDealer",
+    "CollectionTexture": "Student_Portrait_CH0124_Collection"
+  },
+  {
+    "Name_tw": "モミジ",
+    "Name_jp": "モミジ",
+    "School": "RedWinter",
+    "PathName": "Momiji",
+    "Position": "Back",
+    "ArmorType": "HeavyArmor",
+    "SquadType": "Main",
+    "BulletType": "Sonic",
+    "TacticRole": "DamageDealer",
+    "CollectionTexture": "Student_Portrait_Momiji_Collection"
   }
 ]

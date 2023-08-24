@@ -5,7 +5,7 @@
 
   let filterProps = [
     // 'SquadType',
-    // 'School',
+    'School',
     // 'StarGrade',
     'TacticRole',
     'Position',
@@ -81,6 +81,7 @@
       return {
         Name_tw: i.Name,
         Name_jp: data.jp[index].Name,
+        School: i.School,
         PathName: i.PathName,
         Position: i.Position,
         ArmorType: i.ArmorType,
@@ -93,7 +94,9 @@
   }
 
   async function get_data() {
-    // let data = await get_raw_data();
+    // let raw_data = await get_raw_data();
+    // let data = raw_data;
+    // console.log(data);
     let data = await fetch(data_url).then(d => d.json());
 
     handle_data(data);

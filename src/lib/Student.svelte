@@ -11,6 +11,7 @@
 
 <div class="student"
   data-name={stu.Name_tw}
+  data-school={stu.School}
   data-position={stu.Position}
   data-armortype={stu.ArmorType}
   data-bullettype={stu.BulletType}

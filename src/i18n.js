@@ -25,4 +25,16 @@ export const words = {
   HeavyArmor: '重甲',
   Unarmed: '特殊',
   ElasticArmor: '彈力',
+
+  Gehenna: '格黑娜',
+  Millennium: '千年',
+  Trinity: '三一',
+  Abydos: '阿拜多斯',
+  Shanhaijing: '山海經',
+  Hyakkiyako: '百鬼夜行',
+  RedWinter: '赤冬',
+  Valkyrie: '女武神',
+  ETC: '?',
+  SRT: 'SRT',
+  Arius: '奧利斯',
 };
