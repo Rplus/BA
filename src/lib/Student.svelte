@@ -20,8 +20,8 @@
 
   {#if show_icons}
     <div class="icons">
-      <div class="icon icon-{stu.BulletType}" style="background-image: url('{IMG_FOLDER}/ui/Type_Attack_s.png')" title={stu.BulletType}></div>
-      <div class="icon icon-{stu.ArmorType}" style="background-image: url('{IMG_FOLDER}/ui/Type_Defense_s.png')" title={stu.ArmorType}></div>
+      <div class="icon icon-{stu.BulletType}" style="--background-image: url('{IMG_FOLDER}/ui/Type_Attack_s.png')" title={stu.BulletType}>{_(stu.BulletType)[0]}</div>
+      <div class="icon icon-{stu.ArmorType}" style="--background-image: url('{IMG_FOLDER}/ui/Type_Defense_s.png')" title={stu.ArmorType}>{_(stu.ArmorType)[0]}</div>
       <!-- {stu.Position} -->
     </div>
   {/if}
@@ -81,6 +81,11 @@
     background-size: .7rem;
     border-radius: 50%;
     background-color: #f00;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* opacity: calc(var(--name-op) * 0.85); */
     /* border: 1px solid #fff; */
   }
@@ -89,11 +94,13 @@
     align-items: center;
   }
   .icon.icon-role {
+  	font-size: 1.25em;
     width: 1em;
     height: 1em;
-    margin: 0;
+    margin: 0 2px 0 0;
     background-color: #0000;
-    background-size: 1em;
+    background-size: 1.5em;
+    background-size: contain;
   }
   .icon-Explosion { background-color: var(--col-bg-explosive); }
   .icon-Piercing { background-color: var(--col-bg-piercing); }
