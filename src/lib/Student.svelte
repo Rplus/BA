@@ -58,6 +58,7 @@
     margin: .25em;
     box-shadow: inset 0 0 0 1px;
     overflow: hidden;
+    vertical-align: middle;
   }
   .student:hover {
     --name-op: 1;
