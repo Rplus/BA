@@ -121,17 +121,14 @@ summary {
   top: 0;
   z-index: 10;
   background-color: rgb(var(--back-color));
-  padding-bottom: 4px;
   opacity: 0.75;
 }
-.filters summary {
-  text-align: center;
-  font-weight: 900;
-}
+
 .filters[open] {
   opacity: 1;
   background-color: rgb(230 230 160 / 30%);
   backdrop-filter: blur(4px);
+  padding-bottom: 4px;
 }
 
 .filter-form {
@@ -142,7 +139,7 @@ summary {
 
 .filters fieldset {
   background-color: rgba(var(--back-color), .5);
-  padding: 2vmin;
+  padding: 2vmin 2vmin .5em;
 }
 
 .filter-cate__TacticRole label {

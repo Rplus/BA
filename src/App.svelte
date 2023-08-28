@@ -149,7 +149,7 @@
   <div class="dynamic-style" bind:this={styleDiv}></div>
 
   <details class="filters" open>
-    <summary>Filters</summary>
+    <summary class="filters-title">Filters</summary>
 
     <form class="filter-form" on:reset={formReset}>
 
@@ -177,19 +177,20 @@
         <fieldset>
           <legend>Name</legend>
           <input type="search" placeholder="name" bind:value={filterName} autofocus accesskey="q">
-        </fieldset>
 
-        <fieldset>
-          <legend>圖片尺寸</legend>
-          <div style="display: inline-flex;">
-            <input type="range" step="12" min="48" max="96" bind:value={avatar_size}>
-            {avatar_size}px
-          </div>
+          <details open style="margin-top: .5em;">
+            <summary>圖片尺寸</summary>
+
+            <div style="display: inline-flex;">
+              <input type="range" step="12" min="48" max="96" bind:value={avatar_size}>
+              {avatar_size}px
+            </div>
+          </details>
         </fieldset>
 
         <div style="display: flex; justify-content: space-between;">
           <label>
-            <input type="checkbox" bind:checked={show_icons}> 顯示圖示
+            <input type="checkbox" bind:checked={show_icons}> 顯示屬性
           </label>
           <input type="reset" value="Reset">
         </div>
@@ -248,12 +249,16 @@
 </main>
 
 <style>
+  .filters-title {
+    text-align: center;
+    font-weight: 900;
+    background-color: #fff1;
+  }
   .filter-details summary {
     position: relative;
     left: -.5rem;
     z-index: 1;
     margin-top: calc(-2vmin - 1.3rem);
     font-size: small;
-    text-align: left;
   }
 </style>

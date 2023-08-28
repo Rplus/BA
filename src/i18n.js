@@ -6,6 +6,7 @@ export const words = {
   Main: '前排',
   Support: '後排',
 
+  School: '學園',
   TacticRole: '作用',
   Position: '位置',
   BulletType: '攻屬',
