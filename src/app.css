@@ -18,14 +18,25 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --col-bg-explosive: rgba(167, 12, 25, 1);
-  --col-bg-piercing: rgba(178, 109, 31, 1);
-  --col-bg-mystic: rgba(33, 111, 156, 1);
-  --col-bg-sonic: rgba(148, 49, 165, 1);
-  --col-bg-explosive-t: rgba(167, 12, 25, 0.835);
-  --col-bg-piercing-t: rgba(178, 109, 31, 0.835);
-  --col-bg-mystic-t: rgba(33, 111, 156, 0.835);
-  --col-bg-sonic-t: rgba(148, 49, 165, 0.835);
+  --rgb-explosive: 167, 12, 25;
+  --rgb-pierce: 178, 109, 31;
+  --rgb-mystic: 33, 111, 156;
+  --rgb-sonic: 148, 49, 165;
+  --bullet-color-opacity: 1;
+  --armor-color-opacity: .835;
+}
+
+.color {
+
+  &[data-bullettype="Explosion"] { --color-bullettype-rgb: var(--rgb-explosive); }
+  &[data-bullettype="Pierce"] { --color-bullettype-rgb: var(--rgb-pierce); }
+  &[data-bullettype="Mystic"] { --color-bullettype-rgb: var(--rgb-mystic); }
+  &[data-bullettype="Sonic"] { --color-bullettype-rgb: var(--rgb-sonic); }
+
+  &[data-armortype="LightArmor"] { --color-armortype-rgb: var(--rgb-explosive); }
+  &[data-armortype="HeavyArmor"] { --color-armortype-rgb: var(--rgb-pierce); }
+  &[data-armortype="Unarmed"] { --color-armortype-rgb: var(--rgb-mystic); }
+  &[data-armortype="ElasticArmor"] { --color-armortype-rgb: var(--rgb-sonic); }
 }
 
 /*

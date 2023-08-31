@@ -10,7 +10,7 @@
 
 </script>
 
-<div class="student"
+<div class="student color"
 	data-name={stu.Name_tw}
 	data-school={stu.School}
 	data-position={stu.Position}
@@ -18,17 +18,22 @@
 	data-bullettype={stu.BulletType}
 	data-tacticrole={stu.TacticRole}
 >
-	<img class="avatar" src="{IMG_FOLDER}student/collection/{stu.CollectionTexture}.webp" loading="lazy" alt={title} title={title}>
+	<img class="avatar" loading="lazy"
+		alt={title} title={title}
+		src="{IMG_FOLDER}student/collection/{stu.CollectionTexture}.webp"
+	>
 
 	{#if show_icons}
 		<div class="icons">
-			<div class="icon icon-{stu.BulletType}"
-				style="--background-image: url('{IMG_FOLDER}/ui/Type_Attack_s.png')"
+			<!-- style="--background-image: url('{IMG_FOLDER}/ui/Type_Attack_s.png')" -->
+			<div class="icon icon-{stu.BulletType} color"
+				data-bullettype={stu.BulletType}
 				title="攻屬：{_(stu.BulletType)}, {stu.BulletType}"
 			>{_(stu.BulletType)[0]}</div>
 
-			<div class="icon icon-{stu.ArmorType}"
-				style="--background-image: url('{IMG_FOLDER}/ui/Type_Defense_s.png')"
+			<!-- style="--background-image: url('{IMG_FOLDER}/ui/Type_Defense_s.png')" -->
+			<div class="icon icon-{stu.ArmorType} color"
+				data-armortype={stu.ArmorType}
 				title="防屬：{_(stu.ArmorType)}, {stu.ArmorType}"
 			>{_(stu.ArmorType)[0]}</div>
 			<!-- {stu.Position} -->
@@ -65,8 +70,8 @@
 		flex-direction: column;
 		width: calc(var(--avatar-size, 96) * 1px);
 		height: calc(var(--avatar-size, 96) * 1px);
-		margin: .25em;
-		box-shadow: inset 0 0 0 1px;
+		margin: .25em .25em .5em;
+		box-shadow: 0 .35em 0 rgba(var(--color-armortype-rgb), var(--student-armor-opacity, .85));
 		overflow: hidden;
 		vertical-align: middle;
 	}
@@ -92,7 +97,6 @@
 		background-repeat: no-repeat;
 		background-size: .7rem;
 		border-radius: 50%;
-		background-color: #f00;
 		color: #fff;
 		font-size: 10px;
 		display: flex;
@@ -100,6 +104,9 @@
 		justify-content: center;
 		/* opacity: calc(var(--name-op) * 0.85); */
 		/* border: 1px solid #fff; */
+
+		&[data-bullettype] { background-color: rgba(var(--color-bullettype-rgb), 1); }
+		&[data-armortype] { background-color: rgba(var(--color-armortype-rgb), .835); }
 	}
 	.name-inner {
 		display: flex;
@@ -114,14 +121,6 @@
 		background-size: 1.5em;
 		background-size: contain;
 	}
-	.icon-Explosion { background-color: var(--col-bg-explosive); }
-	.icon-Piercing { background-color: var(--col-bg-piercing); }
-	.icon-Mystic { background-color: var(--col-bg-mystic); }
-	.icon-Sonic { background-color: var(--col-bg-sonic); }
-	.icon-HeavyArmor { background-color: var(--col-bg-piercing-t); }
-	.icon-LightArmor { background-color: var(--col-bg-explosive-t); }
-	.icon-Unarmed { background-color: var(--col-bg-mystic-t); }
-	.icon-ElasticArmor { background-color: var(--col-bg-sonic-t); }
 
 	.name {
 		position: absolute;
