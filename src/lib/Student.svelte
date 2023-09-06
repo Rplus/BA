@@ -20,7 +20,7 @@
 >
 	<img class="avatar" loading="lazy"
 		alt={title} title={title}
-		src="{IMG_FOLDER}student/collection/{stu.CollectionTexture}.webp"
+		src="{IMG_FOLDER}student/collection/{stu.Id}.webp"
 	>
 
 	{#if show_icons}

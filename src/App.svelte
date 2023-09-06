@@ -79,6 +79,7 @@
     };
     return data.tw.map((i, index) => {
       return {
+        Id: i.Id,
         Name_tw: i.Name,
         Name_jp: data.jp[index].Name,
         School: i.School,
@@ -88,7 +89,6 @@
         SquadType: i.SquadType,
         BulletType: i.BulletType,
         TacticRole: i.TacticRole,
-        CollectionTexture: i.CollectionTexture,
       }
     });
   }
