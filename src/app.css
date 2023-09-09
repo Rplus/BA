@@ -18,9 +18,14 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  /*
   --rgb-explosive: 167, 12, 25;
   --rgb-pierce: 178, 109, 31;
   --rgb-mystic: 33, 111, 156;
+  */
+  --rgb-explosive: 134, 0, 11;
+  --rgb-pierce: 187, 125, 16;
+  --rgb-mystic: 31, 96, 149;
   --rgb-sonic: 148, 49, 165;
   --bullet-color-opacity: 1;
   --armor-color-opacity: .835;
