@@ -1,66 +1,65 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
 
-  /* color-scheme: light dark; */
-  color-scheme: dark;
-  overflow-y: scroll;
+	/* color-scheme: light dark; */
+	color-scheme: dark;
+	overflow-y: scroll;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
 
 
-  --front-color: rgba(255, 255, 255, 0.87);
-  --back-color: 36, 36, 36;
+	--front-color: rgba(255, 255, 255, 0.87);
+	--back-color: 36, 36, 36;
 
-  /* --rgb-explosive: 167, 12, 25; */
-  --rgb-explosive: 134, 0, 11;
-  /* --rgb-pierce: 178, 109, 31; */
-  --rgb-pierce: 187, 125, 16;
-  /* --rgb-mystic: 33, 111, 156; */
-  --rgb-mystic: 31, 96, 149;
-  --rgb-sonic: 148, 49, 165;
-  --bullet-color-opacity: 1;
-  --armor-color-opacity: .835;
+	/* --rgb-explosive: 167, 12, 25; */
+	--rgb-explosive: 134, 0, 11;
+	/* --rgb-pierce: 178, 109, 31; */
+	--rgb-pierce: 187, 125, 16;
+	/* --rgb-mystic: 33, 111, 156; */
+	--rgb-mystic: 31, 96, 149;
+	--rgb-sonic: 148, 49, 165;
+	--bullet-color-opacity: 1;
+	--armor-color-opacity: .835;
 
-  color: var(--front-color);
-  background-color: rgb(var(--back-color));
+	color: var(--front-color);
+	background-color: rgb(var(--back-color));
 }
 
 body {
-  margin: 0;
+	margin: 0;
 }
 
 .color {
 
-  &[data-bullettype="Explosion"] { --color-bullettype-rgb: var(--rgb-explosive); }
-  &[data-bullettype="Pierce"] { --color-bullettype-rgb: var(--rgb-pierce); }
-  &[data-bullettype="Mystic"] { --color-bullettype-rgb: var(--rgb-mystic); }
-  &[data-bullettype="Sonic"] { --color-bullettype-rgb: var(--rgb-sonic); }
+	&[data-bullettype="Explosion"] { --color-bullettype-rgb: var(--rgb-explosive); }
+	&[data-bullettype="Pierce"] { --color-bullettype-rgb: var(--rgb-pierce); }
+	&[data-bullettype="Mystic"] { --color-bullettype-rgb: var(--rgb-mystic); }
+	&[data-bullettype="Sonic"] { --color-bullettype-rgb: var(--rgb-sonic); }
 
-  &[data-armortype="LightArmor"] { --color-armortype-rgb: var(--rgb-explosive); }
-  &[data-armortype="HeavyArmor"] { --color-armortype-rgb: var(--rgb-pierce); }
-  &[data-armortype="Unarmed"] { --color-armortype-rgb: var(--rgb-mystic); }
-  &[data-armortype="ElasticArmor"] { --color-armortype-rgb: var(--rgb-sonic); }
+	&[data-armortype="LightArmor"] { --color-armortype-rgb: var(--rgb-explosive); }
+	&[data-armortype="HeavyArmor"] { --color-armortype-rgb: var(--rgb-pierce); }
+	&[data-armortype="Unarmed"] { --color-armortype-rgb: var(--rgb-mystic); }
+	&[data-armortype="ElasticArmor"] { --color-armortype-rgb: var(--rgb-sonic); }
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 hr {
-  max-width: 60vw;
-  margin: 1.15rem auto;
-  border: 3px dashed #fff3;
+	max-width: 60vw;
+	margin: 1.15rem auto;
+	border: 3px dashed #fff3;
 }
 
 h2 {
-  text-align: center;
+	text-align: center;
 }
-

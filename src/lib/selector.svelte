@@ -24,8 +24,8 @@
 	function handle_data() {
 		reset_data();
 		students.forEach(sss => {
-      let index = BulletTypes.findIndex(i => i === sss.BulletType);
-      data[index].cxt[sss.SquadType === 'Main' ? 0 : 1].members.push(sss);
+			let index = BulletTypes.findIndex(i => i === sss.BulletType);
+			data[index].cxt[sss.SquadType === 'Main' ? 0 : 1].members.push(sss);
 		});
 	}
 

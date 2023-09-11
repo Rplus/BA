@@ -4,9 +4,9 @@
 	import { _ } from '../const.js';
 	import { onMount } from 'svelte';
 
-  let qs = new URLSearchParams(location.search);
+	let qs = new URLSearchParams(location.search);
 	let styleDiv;
-  let filterName = qs.get('name') || '';
+	let filterName = qs.get('name') || '';
 	let filterProps = [
 		'School',
 		'TacticRole',
@@ -24,9 +24,9 @@
 		checkbox: '',
 	};
 
-  $: {
-    update_name_filter(filterName);
-  }
+	$: {
+		update_name_filter(filterName);
+	}
 	$: {
 		update_checkbox_filter(filtersPool);
 	}
@@ -81,19 +81,19 @@
 
 	function update_style() {
 		if (!styleDiv) {
-		  return;
+			return;
 		}
 		let _style = filterStyles.name + filterStyles.checkbox;
 		styleDiv.innerHTML = _style ? `<style>${_style}</style>` : '';
 	}
 	function formReset() {
-	  filterName = '';
-	  filtersPool.forEach(pool => {
-	    pool.filters.forEach(f => {
-	      f.value = false;
-	    })
-	  })
-	  filtersPool = filtersPool;
+		filterName = '';
+		filtersPool.forEach(pool => {
+			pool.filters.forEach(f => {
+				f.value = false;
+			})
+		})
+		filtersPool = filtersPool;
 	}
 
 	onMount(() => {
