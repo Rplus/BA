@@ -3,13 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --front-color: rgba(255, 255, 255, 0.87);
-  --back-color: 36, 36, 36;
-
   /* color-scheme: light dark; */
   color-scheme: dark;
-  color: var(--front-color);
-  background-color: rgb(var(--back-color));
   overflow-y: scroll;
 
   font-synthesis: none;
@@ -18,17 +13,26 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  /*
-  --rgb-explosive: 167, 12, 25;
-  --rgb-pierce: 178, 109, 31;
-  --rgb-mystic: 33, 111, 156;
-  */
+
+  --front-color: rgba(255, 255, 255, 0.87);
+  --back-color: 36, 36, 36;
+
+  /* --rgb-explosive: 167, 12, 25; */
   --rgb-explosive: 134, 0, 11;
+  /* --rgb-pierce: 178, 109, 31; */
   --rgb-pierce: 187, 125, 16;
+  /* --rgb-mystic: 33, 111, 156; */
   --rgb-mystic: 31, 96, 149;
   --rgb-sonic: 148, 49, 165;
   --bullet-color-opacity: 1;
   --armor-color-opacity: .835;
+
+  color: var(--front-color);
+  background-color: rgb(var(--back-color));
+}
+
+body {
+  margin: 0;
 }
 
 .color {
@@ -44,141 +48,19 @@
   &[data-armortype="ElasticArmor"] { --color-armortype-rgb: var(--rgb-sonic); }
 }
 
-/*
-@media (prefers-color-scheme: light) {
-  :root {
-    --front-color: #213547;
-    --back-color: 256, 256, 256;
-    --link-hover-color: #535bf2;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-*/
-
-a {
-  font-weight: 500;
-  color: var(--link-color, #646cff);
-  text-decoration: inherit;
-}
-a:hover {
-  color: var(--link-hover-color, #747bff);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-body {
-  margin-top: 0;
-  min-width: 320px;
+hr {
+  max-width: 60vw;
+  margin: 1.15rem auto;
+  border: 3px dashed #fff3;
 }
 
-label:hover {
-  background-color: #ff03;
-  cursor: pointer;
-}
-
-summary {
-  cursor: pointer;
-}
-
-
-.table {
-  display: grid;
-  gap: 1em;
-  overflow: hidden;
-  grid-template-columns: 3em 3fr 2fr;
-  grid-template-areas:
-    ".                Main-title      Support-title"
-    "Explosion-title  Main-Explosion  Support-Explosion"
-    "Pierce-title     Main-Pierce     Support-Pierce"
-    "Mystic-title     Main-Mystic     Support-Mystic"
-    "Sonic-title      Main-Sonic      Support-Sonic";
-}
-
-@media (max-width: 560px) {
-  .table {
-    grid-template-columns: 3vw 1fr 1fr;
-    gap: .5rem;
-  }
-  .th {
-    font-size: smaller;
-  }
-}
-
-.cell {
-  background-color: #9994;
-  padding: .5em .1em .5em .5em;
-  --name-op: .75;
-  --name-bg-op: .5;
-}
-.cell:hover,
-.cell:focus-within {
-  --name-op: .85;
-  --name-bg-op: .65;
-}
-
-.cell[data-squad="Main"][data-bullet="Explosion"] { grid-area: Main-Explosion; }
-.cell[data-squad="Main"][data-bullet="Pierce"] { grid-area: Main-Pierce; }
-.cell[data-squad="Main"][data-bullet="Mystic"] { grid-area: Main-Mystic; }
-.cell[data-squad="Main"][data-bullet="Sonic"] { grid-area: Main-Sonic; }
-
-.cell[data-squad="Support"][data-bullet="Explosion"] { grid-area: Support-Explosion; }
-.cell[data-squad="Support"][data-bullet="Pierce"] { grid-area: Support-Pierce; }
-.cell[data-squad="Support"][data-bullet="Mystic"] { grid-area: Support-Mystic; }
-.cell[data-squad="Support"][data-bullet="Sonic"] { grid-area: Support-Sonic; }
-
-.th {
-  color: #999;
-  margin: 0;
+h2 {
   text-align: center;
 }
 
-.filters {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: rgb(var(--back-color));
-  opacity: 0.75;
-}
-
-.filters[open] {
-  opacity: 1;
-  background-color: rgb(230 230 160 / 30%);
-  backdrop-filter: blur(4px);
-  padding-bottom: 4px;
-}
-
-.filter-form {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.filters fieldset {
-  background-color: rgba(var(--back-color), .5);
-  padding: 2vmin 2vmin .5em;
-}
-
-.filter-cate__TacticRole label {
-  display: inline-flex;
-  align-items: center;
-}
-
-.filter-cate__TacticRole .label-icon {
-  width: 1.25rem;
-  height: 1.25rem;
-  background-image: var(--icon-path);
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* filter: invert(1); */
-}
-
-footer {
-  text-align: center;
-}
-
-footer ul {
-  text-align: start;
-  width: fit-content;
-  margin: 0 auto;
-  font-family: monospace;
-}

@@ -8,9 +8,10 @@ export const words = {
 
   School: '學園',
   TacticRole: '作用',
-  Position: '位置',
+  Position: '射程',
   BulletType: '攻屬',
   ArmorType: '防屬',
+  SquadType: '分類',
 
   DamageDealer: '輸出',
   Tanker: '坦克',
