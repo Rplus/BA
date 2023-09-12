@@ -27,19 +27,20 @@
 		</div>
 
 		<div class="name" style="--icon-role: url({get_role_icon_src(student)});">
-			{student.Name_tw}
-			<!--
+			<div class="name-inner">
+				{student.Name_tw}
+			</div>
+
 			<div class="tip">
-				<a href="https://schale.gg/?chara={stu.PathName}" target="schale.gg">
-					{stu.PathName}
+				<a href="https://schale.gg/?chara={student.PathName}" target="schale.gg">
+					{student.PathName}
 				</a>
 				<br>
-				<a href="https://bluearchive.wikiru.jp/?{stu.Name_jp}#Profile" target="wikiru">
-					{stu.Name_jp}
+				<a href="https://bluearchive.wikiru.jp/?{student.Name_jp}#Profile" target="wikiru">
+					{student.Name_jp}
 				</a>
 			</div>
 
-			-->
 		</div>
 	{:else}
 		<div class="empty">?</div>
@@ -85,12 +86,41 @@
 		padding: 1px 3px;
 		text-indent: 1em;
 		white-space: nowrap;
-		overflow: hidden;
 		background-image: var(--icon-role);
 		background-repeat: no-repeat;
 		background-size: 1em;
 		background-position: .1em 50%;
 		background-color: #3339;
+		height: 1.5em;
+	}
+
+	.name-inner {
+		max-width: 100%;
+		overflow: hidden;
+	}
+
+	.tip {
+		position: absolute;
+		bottom: 1.5em;
+		right: 0;
+		left: 0;
+		background-color: inherit;
+		text-indent: 0;
+		line-height: 1.3;
+		visibility: hidden;
+		overflow: hidden;
+
+		& a {
+			color: #ccf;
+
+			&::before {
+				content: '🔗 ';
+			}
+		}
+	}
+
+	.name:hover .tip {
+		visibility: visible;
 	}
 
 	.icons {
