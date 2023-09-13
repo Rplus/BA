@@ -34,12 +34,12 @@
 				{student.Name_tw}
 			</div>
 
-			<div class="tip" on:click|stopPropagation>
-				<a href="https://schale.gg/?chara={student.PathName}" target="schale.gg">
+			<div class="tip">
+				<a href="https://schale.gg/?chara={student.PathName}" target="schale.gg" on:click|stopPropagation>
 					{student.PathName}
 				</a>
 				<br>
-				<a href="https://bluearchive.wikiru.jp/?{student.Name_jp}#Profile" target="wikiru">
+				<a href="https://bluearchive.wikiru.jp/?{student.Name_jp}#Profile" target="wikiru" on:click|stopPropagation>
 					{student.Name_jp}
 				</a>
 			</div>
