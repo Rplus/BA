@@ -154,8 +154,7 @@
 		position: sticky;
 		top: 0;
 		z-index: 10;
-		/* width: fit-content; */
-		width: 37em;
+		width: fit-content;
 		margin: 0 auto;
 		padding-left: 2em;
 		padding-right: 2em;
