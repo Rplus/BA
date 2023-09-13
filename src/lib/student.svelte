@@ -5,6 +5,9 @@
 	function get_title(student) {
 		return `${student.Name_tw}, ${student.Name_jp}, ${student.PathName}`;
 	}
+	function get_type_title(type) {
+		return `${_(type)}, ${type}`;
+	}
 </script>
 
 
@@ -15,13 +18,13 @@
 			<div
 				class="icon color"
 				data-bullettype={student.BulletType}
-				title={student.BulletType}>
+				title={get_type_title(student.BulletType)}>
 				{_(student.BulletType).slice(0,1)}
 			</div>
 			<div
 				class="icon color"
 				data-armortype={student.ArmorType}
-				title={student.ArmorType}>
+				title={get_type_title(student.ArmorType)}>
 				{_(student.ArmorType).slice(0,1)}
 			</div>
 		</div>
