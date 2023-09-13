@@ -106,7 +106,7 @@
 	.cell {
 		position: relative;
 		background-color: #9994;
-		padding: .5em .1em .5em .5em;
+		padding: .5em .1em .5em calc(.1em + 1vw);
 		overflow: hidden;
 
 		&::before {

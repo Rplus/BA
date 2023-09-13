@@ -153,7 +153,7 @@
 	.filter-form {
 		position: sticky;
 		top: 0;
-		z-index: 2;
+		z-index: 10;
 		/* width: fit-content; */
 		width: 37em;
 		margin: 0 auto;

@@ -86,24 +86,27 @@
 	}
 
 	function handle_keydown(e) {
-		switch (e.key) {
+		if (e.altKey || e.ctrlKey) {
+			return;
+		}
+		switch (e.code) {
 			// case 'ArrowRight':
-			case 'd':
+			case 'KeyD':
 				navfocus({ dir_x: 1, });
 				break;
 
 			// case 'ArrowLeft':
-			case 'a':
+			case 'KeyA':
 				navfocus({ dir_x: -1, });
 				break;
 
 			// case 'ArrowUp':
-			case 'w':
+			case 'KeyW':
 				navfocus({ dir_y: -1, });
 				break;
 
 			// case 'ArrowDown':
-			case 's':
+			case 'KeyS':
 				navfocus({ dir_y: 1, });
 				break;
 

@@ -58,6 +58,8 @@
 	.box {
 		--opacity: .85;
 		--height: 2.5em;
+		--tip-display: none;
+
 		position: sticky;
 		bottom: 0;
 		width: fit-content;
