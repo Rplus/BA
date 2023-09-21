@@ -39,7 +39,7 @@
 					{student.PathName}
 				</a>
 				<br>
-				<a href="https://bluearchive.wikiru.jp/?{student.Name_jp}#Profile" target="wikiru" on:click|stopPropagation>
+				<a href="https://bluearchive.wikiru.jp/?{student.Name_jp}#Skills" target="wikiru" on:click|stopPropagation>
 					{student.Name_jp}
 				</a>
 			</div>
