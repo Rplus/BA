@@ -69,4 +69,16 @@ function replace_desc(desc, paras, isEx) {
 	return desc;
 }
 
+function compress_data(arr) {
+	let props = [...new Set(arr.map(i => Object.keys(i)).flat())];
+	let new_data = {
+		props,
+		data: arr.map(stu => props.map(j => stu[j])),
+	};
+
+	return new_data;
+}
+
 outputJSON(op, './src/data/students.json', 0);
+outputJSON(op, './src/data/students.src.json');
+outputJSON(compress_data(op), './src/data/students.zip.json', 0);
