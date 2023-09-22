@@ -1,8 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	// import { writable } from 'svelte/store';
-
-	import data_url from '/src/data/students.json?url'
+	import { get_data } from './const.js';
 
 	import Selector from './lib/selector.svelte';
 	import Student from './lib/student.svelte';
@@ -14,36 +13,7 @@
 
 	onMount(async () => {
 		students = await get_data();
-	})
-
-	async function get_data() {
-		// let raw_data = await get_raw_data();
-		// let students = raw_data;
-		// console.log(students);
-		let students = await fetch(data_url).then(d => d.json());
-		return students;
-	}
-
-	async function get_raw_data() {
-		let data = {
-			tw: await fetch('https://schale.gg/data/tw/students.min.json').then(d => d.json()),
-			jp: await fetch('https://schale.gg/data/jp/students.min.json').then(d => d.json()),
-		};
-		return data.tw.map((i, index) => {
-			return {
-				Id: i.Id,
-				Name_tw: i.Name,
-				Name_jp: data.jp[index].Name,
-				School: i.School,
-				PathName: i.PathName,
-				Position: i.Position,
-				ArmorType: i.ArmorType,
-				SquadType: i.SquadType,
-				BulletType: i.BulletType,
-				TacticRole: i.TacticRole,
-			}
-		});
-	}
+	});
 
 	function handle_select(data) {
 		let student = data.detail?.student;
