@@ -1622,7 +1622,7 @@
   {
     "Id": 10065,
     "Name_jp": "カホ",
-    "Name_tw": "カホ",
+    "Name_tw": "佳穗",
     "School": "Hyakkiyako",
     "PathName": "Kaho",
     "Position": "Middle",
@@ -1634,7 +1634,7 @@
   {
     "Id": 10066,
     "Name_jp": "アリス（メイド）",
-    "Name_tw": "アリス（メイド）",
+    "Name_tw": "愛麗絲(女僕)",
     "School": "Millennium",
     "PathName": "Aris_Maid",
     "Position": "Back",
@@ -1646,7 +1646,7 @@
   {
     "Id": 10067,
     "Name_jp": "トキ（バニーガール）",
-    "Name_tw": "トキ（バニーガール）",
+    "Name_tw": "季(兔女郎)",
     "School": "Millennium",
     "PathName": "Toki_Bunny",
     "Position": "Middle",
@@ -1658,7 +1658,7 @@
   {
     "Id": 26009,
     "Name_jp": "ユズ（メイド）",
-    "Name_tw": "ユズ（メイド）",
+    "Name_tw": "柚子(女僕)",
     "School": "Millennium",
     "PathName": "Yuzu_Maid",
     "Position": "Back",
@@ -1670,7 +1670,7 @@
   {
     "Id": 10068,
     "Name_jp": "レイサ",
-    "Name_tw": "レイサ",
+    "Name_tw": "澪紗",
     "School": "Trinity",
     "PathName": "Reisa",
     "Position": "Front",
@@ -1682,7 +1682,7 @@
   {
     "Id": 10069,
     "Name_jp": "ルミ",
-    "Name_tw": "ルミ",
+    "Name_tw": "瑠美",
     "School": "Shanhaijing",
     "PathName": "Rumi",
     "Position": "Front",
@@ -1694,7 +1694,7 @@
   {
     "Id": 10070,
     "Name_jp": "ミナ",
-    "Name_tw": "ミナ",
+    "Name_tw": "美奈",
     "School": "Shanhaijing",
     "PathName": "Mina",
     "Position": "Middle",
@@ -1706,7 +1706,7 @@
   {
     "Id": 20026,
     "Name_jp": "ミノリ",
-    "Name_tw": "ミノリ",
+    "Name_tw": "實里",
     "School": "RedWinter",
     "PathName": "Minori",
     "Position": "Back",
@@ -1718,7 +1718,7 @@
   {
     "Id": 10071,
     "Name_jp": "ミヤコ（水着）",
-    "Name_tw": "ミヤコ（水着）",
+    "Name_tw": "都子(泳裝)",
     "School": "SRT",
     "PathName": "Miyako_Swimsuit",
     "Position": "Front",
@@ -1730,7 +1730,7 @@
   {
     "Id": 10072,
     "Name_jp": "サキ（水着）",
-    "Name_tw": "サキ（水着）",
+    "Name_tw": "咲希(泳裝)",
     "School": "SRT",
     "PathName": "Saki_Swimsuit",
     "Position": "Back",
@@ -1742,7 +1742,7 @@
   {
     "Id": 26010,
     "Name_jp": "ミユ（水着）",
-    "Name_tw": "ミユ（水着）",
+    "Name_tw": "美優(泳裝)",
     "School": "SRT",
     "PathName": "Miyu_Swimsuit",
     "Position": "Back",
@@ -1754,7 +1754,7 @@
   {
     "Id": 20027,
     "Name_jp": "シロコ（水着）",
-    "Name_tw": "シロコ（水着）",
+    "Name_tw": "白子(泳裝)",
     "School": "Abydos",
     "PathName": "Shiroko_Swimsuit",
     "Position": "Back",
@@ -1870,5 +1870,29 @@
     "SquadType": "Support",
     "BulletType": "Sonic",
     "TacticRole": "Healer"
+  },
+  {
+    "Id": 10077,
+    "Name_jp": "イチカ",
+    "Name_tw": "イチカ",
+    "School": "Trinity",
+    "PathName": "Ichika",
+    "Position": "Middle",
+    "ArmorType": "HeavyArmor",
+    "SquadType": "Main",
+    "BulletType": "Sonic",
+    "TacticRole": "DamageDealer"
+  },
+  {
+    "Id": 10078,
+    "Name_jp": "カスミ",
+    "Name_tw": "カスミ",
+    "School": "Gehenna",
+    "PathName": "Kasumi",
+    "Position": "Middle",
+    "ArmorType": "HeavyArmor",
+    "SquadType": "Main",
+    "BulletType": "Sonic",
+    "TacticRole": "DamageDealer"
   }
 ]
