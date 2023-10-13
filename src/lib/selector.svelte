@@ -143,6 +143,7 @@
 	.student-outer {
 		display: inline-flex;
 		margin: 0.5em;
+		vertical-align: middle;
 	}
 
 
