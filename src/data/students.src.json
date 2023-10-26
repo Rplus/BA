@@ -1894,5 +1894,53 @@
     "SquadType": "Main",
     "BulletType": "Sonic",
     "TacticRole": "DamageDealer"
+  },
+  {
+    "Id": 20031,
+    "Name_jp": "シグレ（温泉）",
+    "Name_tw": "シグレ（温泉）",
+    "School": "RedWinter",
+    "PathName": "Shigure_HotSpring",
+    "Position": "Back",
+    "ArmorType": "Unarmed",
+    "SquadType": "Support",
+    "BulletType": "Pierce",
+    "TacticRole": "Healer"
+  },
+  {
+    "Id": 10079,
+    "Name_jp": "御坂美琴",
+    "Name_tw": "御坂美琴",
+    "School": "Tokiwadai",
+    "PathName": "Misaka_Mikoto",
+    "Position": "Middle",
+    "ArmorType": "HeavyArmor",
+    "SquadType": "Main",
+    "BulletType": "Pierce",
+    "TacticRole": "DamageDealer"
+  },
+  {
+    "Id": 10080,
+    "Name_jp": "食蜂操祈",
+    "Name_tw": "食蜂操祈",
+    "School": "Tokiwadai",
+    "PathName": "Shokuhou_Misaki",
+    "Position": "Middle",
+    "ArmorType": "HeavyArmor",
+    "SquadType": "Main",
+    "BulletType": "Explosion",
+    "TacticRole": "Supporter"
+  },
+  {
+    "Id": 26011,
+    "Name_jp": "佐天涙子",
+    "Name_tw": "佐天涙子",
+    "School": "Sakugawa",
+    "PathName": "Saten_Ruiko",
+    "Position": "Back",
+    "ArmorType": "Unarmed",
+    "SquadType": "Support",
+    "BulletType": "Pierce",
+    "TacticRole": "DamageDealer"
   }
 ]
