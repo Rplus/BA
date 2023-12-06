@@ -2,6 +2,7 @@ import { outputJSON, readJsonFile } from './u.mjs';
 
 let data_tw = readJsonFile('./src/data/students.min.tw.json');
 let data_jp = readJsonFile('./src/data/students.min.jp.json');
+let locale_tw = readJsonFile('./src/data/locale.min.tw.json');
 
 let props = [
 	'Id',
@@ -12,6 +13,7 @@ let props = [
 	'SquadType',
 	'BulletType',
 	'TacticRole',
+	'Club',
 ];
 
 let op = data_jp.map((stu_jp, index) => {
@@ -21,11 +23,19 @@ let op = data_jp.map((stu_jp, index) => {
 	ss.Name_tw = stu_tw.Name || stu_jp.Name;
 
 	for (let prop of props) {
+		// if (prop === 'School' || prop === 'Club') {
+		// 	ss[prop] =  get_tw_locale(prop, stu_jp[prop]);
+		// 	continue;
+		// }
 		ss[prop] = stu_tw[prop] || stu_jp[prop];
 		// ss.Skills = get_skills(stu_tw.Skills);
 	}
 	return ss;
 });
+
+function get_tw_locale(prop, key) {
+	return locale_tw[prop]?.[key] || null;
+}
 
 function get_skills(skills) {
 	return skills.map(s => {
