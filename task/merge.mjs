@@ -17,11 +17,11 @@ let props = [
 let op = data_jp.map((stu_jp, index) => {
 	let ss = {};
 	let stu_tw = data_tw.find(s => s.PathName === stu_jp.PathName) || stu_jp;
+	ss.Name_jp = stu_jp.Name;
+	ss.Name_tw = stu_tw.Name || stu_jp.Name;
 
 	for (let prop of props) {
 		ss[prop] = stu_tw[prop] || stu_jp[prop];
-		ss.Name_jp = stu_jp.Name;
-		ss.Name_tw = stu_tw.Name || stu_jp.Name;
 		// ss.Skills = get_skills(stu_tw.Skills);
 	}
 	return ss;
