@@ -9,6 +9,7 @@
 	let filterName = qs.get('name') || '';
 	let filterProps = [
 		'School',
+		'Club',
 		'TacticRole',
 		'BulletType',
 		'ArmorType',
@@ -129,7 +130,7 @@
 					<legend>{_(filterCate.prop)}</legend>
 					<details class="filter-details" open={filterCate.filters.length < 5}>
 						<summary></summary>
-						<div>
+						<div class="filetr-optinos">
 							{#each filterCate.filters as filter}
 								<div>
 								<label style="--icon-path: url('https://proxy.duckduckgo.com/iu/?u=https://raw.githubusercontent.com/lonqie/SchaleDB/main/images/ui/Role_{filter.label}.png')">
@@ -160,6 +161,7 @@
 		padding-right: 2em;
 		padding: .5em;
 		max-width: 100%;
+		font-size: smaller;
 		background-color: rgba(var(--back-color), .8);
 	}
 	.flex {
@@ -185,5 +187,20 @@
 	}
 	.filter-summary {
 		text-align: center;
+	}
+	.filetr-optinos {
+		max-height: 30vh;
+		max-width: 15vw;
+		overflow: auto;
+
+		& label {
+			display: block;
+			align-items: center;
+			line-height: 1;
+			margin-bottom: 0.25em;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
 	}
 </style>

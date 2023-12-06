@@ -21,10 +21,11 @@ import data_zip from '/src/data/students.zip.json';
 
 export async function get_data() {
 	// let _students = await get_raw_data();
+	// console.log(_students);
 	// let _students = await fetch(data_url).then(d => d.json());
 	// let _students = raw_data;
 	// let _students = unzip(data_zip);
-	// console.log(_students);
+	// console.log(data_zip);
 	return unzip(data_zip);
 }
 
@@ -54,6 +55,7 @@ async function get_raw_data() {
 			SquadType: i.SquadType,
 			BulletType: i.BulletType,
 			TacticRole: i.TacticRole,
+			Club: i.Club,
 		}
 	});
 }

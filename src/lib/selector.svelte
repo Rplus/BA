@@ -56,6 +56,7 @@
 						<div class="student-outer" on:click={() => select(member)}
 							data-name={member.Name_tw}
 							data-school={member.School}
+							data-club={member.Club}
 							data-position={member.Position}
 							data-armortype={member.ArmorType}
 							data-bullettype={member.BulletType}
