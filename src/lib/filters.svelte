@@ -190,7 +190,7 @@
 	}
 	.filetr-optinos {
 		max-height: 30vh;
-		max-width: 15vw;
+		max-width: 10em;
 		overflow: auto;
 
 		& label {
