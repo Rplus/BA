@@ -63,3 +63,13 @@ hr {
 h2 {
 	text-align: center;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #fff2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff3;
+}
+
